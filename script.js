@@ -32,6 +32,7 @@ const btn = document.getElementById('btn');
 const clr = document.getElementById('clr');
 
 btn.addEventListener('click', () => {
+  img.style.display = "block";
   generateImage().then(result => {
     img.src = result.results.images[0];
   }).catch(error => {
@@ -39,6 +40,7 @@ btn.addEventListener('click', () => {
   });
 });
 clr.addEventListener('click', () => {
+  img.style.display = "none";
   input.value = "";
   img.src = "";
 })
