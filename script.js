@@ -1,9 +1,9 @@
 
 const input = document.getElementById('input');
-const prompt = input.value;
 const btn = document.getElementById('btn');
 const img = document.getElementById('img');
 function generateImage(){
+    const prompt = input.value;
     fetch(`https://api.unsplash.com/photos/random?query=car&client_id=JJp7f5hwz7VqsgqbDGoQ_ukwUVWlidIYlYh1Dzoby60`)
       .then(res => res.json())
       .then(data => {
