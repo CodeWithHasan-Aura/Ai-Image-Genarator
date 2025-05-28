@@ -20,7 +20,6 @@ btn.addEventListener('click', ()=>{
 const clr = document.getElementById('clr');
 
 clr.addEventListener('click', () => {
-  img.style.display = "none";
   input.value = "";
   img.src = "";
 })
