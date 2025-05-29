@@ -22,7 +22,7 @@ btn.addEventListener('click', ()=>{
       clickCount = 0; // Reset after alert
     }
   });
-})
+
 
 const clr = document.getElementById('clr');
 
