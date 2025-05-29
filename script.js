@@ -11,17 +11,10 @@ function generateImage(){
         img.src = data.urls.regular;
       });
 }
-let clickCount = 0;
-btn.addEventListener('click', ()=>{
+btn.addEventListener('click', () => {
  //  console.log(prompt) 
     generateImage()
-    clickCount++;
-
-    if (clickCount === 50) {
-      alert("Cooldown! Use After An Hour");
-      clickCount = 0; // Reset after alert
-    }
-  });
+  })
 
 
 const clr = document.getElementById('clr');
