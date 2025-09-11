@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Ai Image Genarator</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="heading">GENERATE AS YOU WISH</h1>
+  <h1 class="heading">GENERATE AS YOU WISH</h1>
+
+  <select id="Selectoption">
+    <option value="Real">Real</option>
+    <option value="AI">AI</option>
+  </select>
+
   <div class="main">
     <input type="text" id="input" placeholder="Enter a prompt...">
     <div class="handlers">
-    <button id="btn">Genarate</button>
-    <button id="clr">Clear</button>
-    <img id="img" src="">
+      <button id="btn">Generate</button>
+      <button id="clr">Clear</button>
+    </div>
+    <img id="img" src="" alt="">
   </div>
-  </div>
+
   <script src="script.js"></script>
 </body>
 
