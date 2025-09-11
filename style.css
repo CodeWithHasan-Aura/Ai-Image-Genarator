@@ -35,6 +35,19 @@ input {
   color: #ffff;
 }
 
+#Selectoption{
+  padding: .5vw 1vw;
+  margin: 2vw;
+  background-color: lightseagreen;
+  border-radius: 5vw;
+  color: #ffff;
+  border: none;
+  font-size: 1.2vw;
+}
+
+#Selectoption:focus{
+  outline: none;
+}
 .main {
   display: flex;
   justify-content: space-between;
@@ -86,6 +99,21 @@ input {
     margin: 5vh 0;
   }
 
+  #Selectoption{
+    padding: .5vh 1vh;
+    margin: 2vh;
+    background-color: lightseagreen;
+    border-radius: .5vh;
+    color: #ffff;
+    border: none;
+    font-size: 2vh;
+  }
+
+  
+#Selectoption:focus{
+  outline: none;
+}
+
   .main {
     display: flex;
     flex-direction: column;
@@ -96,4 +124,4 @@ input {
   color: lightseagreen;
   font-size: 3vh;
 }
-}
+    }
