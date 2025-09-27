@@ -1,5 +1,4 @@
-
- const input = document.getElementById('input');
+const input = document.getElementById('input');
 const btn = document.getElementById('btn');
 const img = document.getElementById('img');
 const selectEl = document.getElementById('Selectoption');
@@ -31,9 +30,10 @@ function normal() {
     return;
   }
 
-  showMessage(`🔎 Searching Unsplash for "${prompt}"...`, "darkcyan");
+  showMessage(`🔎 Searching for "${prompt}"...`, "darkcyan");
 
-  fetch(`https://api.unsplash.com/photos/random?query=${encodeURIComponent(prompt)}&client_id=_MWVlvH6Mh0gDBEDt9BJez45x0S_aWfyq0eodX7K6XI`)
+  // ✅ Added timestamp to bust cache so each click fetches a fresh image
+  fetch(`https://api.unsplash.com/photos/random?query=${encodeURIComponent(prompt)}&client_id=_MWVlvH6Mh0gDBEDt9BJez45x0S_aWfyq0eodX7K6XI&ts=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       if (data && data.urls && data.urls.regular) {
